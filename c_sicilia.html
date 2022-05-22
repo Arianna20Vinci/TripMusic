@@ -41,13 +41,44 @@
             <li class="breadcrumb-item">Sicilia</li>
           </ol>
       </nav>
-      <h1>SICILIA</h1> 
+      <h1>SICILIA</h1>
+      <!--BOTTONE AGGIUNGI-->
+        <button id="aggiungi" type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal1">+ AGGIUNGI</button>
+        <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">AGGIUNGI UNA CANZONE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">NOME:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                       </div>
+                       <div class="mb-3">
+                          <label for="message-text" class="col-form-label">COGNOME</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                <button type="button" class="btn btn-warning">Invia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FINE BOTTONE AGGIUNGI--> 
       <div id="canzoni" class="row row-cols-sm-4 row-cols-md-2 morepadding">
           <div id="canzone" class="col-sm-4 col-md-2">
             <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
                 <div class="card-body">
-                  <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=HVPEjDpleto&ab_channel=Lili">Amore sociale<br> Autore: Dimartino</a></a>
+                  <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=HVPEjDpleto&ab_channel=Lili">Amore sociale<br> Autore:<br> Dimartino</a></a>
             </div>
           </div>  
         </div> 
@@ -55,7 +86,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=8cPeKLoe8aI&ab_channel=33Melandrina33">BASTAVANO LE BRICIOLE - Marracash</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=8cPeKLoe8aI&ab_channel=33Melandrina33">BASTAVANO LE BRICIOLE<br>Autore:<br> Marracash</a>
             </div>
           </div> 
         </div> 
@@ -71,7 +102,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=w1f6o1HQBvg&ab_channel=IlVoloVEVO">Grande amore - Il Volo</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=w1f6o1HQBvg&ab_channel=IlVoloVEVO">Grande amore<br>Autore:<br>Il Volo</a>
             </div>
           </div> 
          </div>
@@ -79,7 +110,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=4qqlDh4jt-o&ab_channel=Nicol%C3%B2Carnesi">Ho una Galassia nell'Armadio - Nicolò Carnesi</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=4qqlDh4jt-o&ab_channel=Nicol%C3%B2Carnesi">Ho una Galassia nell'Armadio<br>Autore:<br>Nicolò Carnesi</a>
             </div>
           </div> 
          </div>
@@ -87,7 +118,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=BdvhfJ5FgPY&ab_channel=CarmenConsoliVEVO">L'Ultimo Bacio - Carmen Consoli</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=BdvhfJ5FgPY&ab_channel=CarmenConsoliVEVO">L'Ultimo Bacio<br>Autore:<br>Carmen Consoli</a>
             </div>
           </div> 
          </div>
@@ -111,7 +142,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=zVgRAX95PVY&ab_channel=Rai">Meraviglioso - Beppe Fiorello</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=zVgRAX95PVY&ab_channel=Rai">Meraviglioso<br>Autore:<br>Beppe Fiorello</a>
             </div>
           </div> 
          </div>
@@ -119,7 +150,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=orVIoKcJcvU&ab_channel=GiusyFerreriVEVO">Novembre - Giusy Ferreri</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=orVIoKcJcvU&ab_channel=GiusyFerreriVEVO">Novembre<br>Autore:<br>Giusy Ferreri</a>
             </div>
           </div> 
          </div>
@@ -135,7 +166,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=-xKXmv8rkbA&ab_channel=AmoreEterno">Sicilia Antica - Marcella Bella</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=-xKXmv8rkbA&ab_channel=AmoreEterno">Sicilia Antica<br>Autore:<br>Marcella Bella</a>
             </div>
           </div> 
          </div>
@@ -143,7 +174,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=QNwC8eZ7brE&ab_channel=AlfioCT94">Tarantella siciliana - Marranzanu, Scacciapensieri</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=QNwC8eZ7brE&ab_channel=AlfioCT94">Tarantella siciliana<br>Autore:<br>Marranzanu, Scacciapensieri</a>
             </div>
           </div> 
          </div>
@@ -159,7 +190,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=gFFiklZdTy0&ab_channel=FondazioneSonora">Voglia di dance all night - Eiffel65</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=gFFiklZdTy0&ab_channel=FondazioneSonora">Voglia di dance all night<br>Autore:<br>Eiffel65</a>
             </div>
           </div> 
          </div>
@@ -167,7 +198,7 @@
           <div class="card">
               <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
               <div class="card-body">
-                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=3nxXrHZ2HL4&ab_channel=FrancoBattiatoVEVO">Voglio vederti danzare - Franco Battiato</a>
+                <a class="nome" class="card-title" href="https://www.youtube.com/watch?v=3nxXrHZ2HL4&ab_channel=FrancoBattiatoVEVO">Voglio vederti danzare<br>Autore:<br>Franco Battiato</a>
             </div>
           </div> 
          </div>
